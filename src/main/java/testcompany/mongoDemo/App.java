@@ -12,7 +12,7 @@ import testcompany.mongoDemo.domain.Author;
 import testcompany.mongoDemo.domain.Blog;
 
 /**
- * Hello world!
+ * Main class to Run
  *
  */
 public class App 
