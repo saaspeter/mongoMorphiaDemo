@@ -11,5 +11,6 @@ Project Model:
 1. check out this project
 2. change mongoDB url and port in testcompany.mongoDemo.dao.DBConstant.jave
 3. Run class: testcompany.mongoDemo.App
+4. check you mongoDB data, DB is: mongoDemo (I use this client: MongoVUE 1.6.9)
 
 Go this url to learn free course: "java for MongoDB" : Http://www.tomylearn.com
