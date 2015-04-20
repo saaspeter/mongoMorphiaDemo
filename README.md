@@ -11,5 +11,31 @@ Project Model:
 1. check out this project
 2. change mongoDB url and port in testcompany.mongoDemo.dao.DBConstant.jave
 3. Run class: testcompany.mongoDemo.App
+4. check you mongoDB data, DB is: mongoDemo (I use this client: MongoVUE 1.6.9)
+   
+here is my data in MongoDB
+   /* 0 */
+{
+  "_id" : ObjectId("552caaeede1a35281cc1dd00"),
+  "className" : "testcompany.mongoDemo.domain.Blog",
+  "title" : "blog first title1",
+  "content" : "my first blog",
+  "createDate" : ISODate("2015-04-14T05:51:42.253Z"),
+  "author" : {
+    "$ref" : "Author",
+    "$id" : ObjectId("552caaeede1a35281cc1dcff")
+  }
+}
 
-Go this url to learn free course: "java for MongoDB" : Http://www.tomylearn.com
+/* 1 */
+{
+  "_id" : ObjectId("552caaeede1a35281cc1dd01"),
+  "className" : "testcompany.mongoDemo.domain.Blog",
+  "title" : "blog second title2",
+  "content" : "my second blog",
+  "createDate" : ISODate("2015-04-14T05:51:42.253Z"),
+  "author" : {
+    "$ref" : "Author",
+    "$id" : ObjectId("552caaeede1a35281cc1dcff")
+  }
+}
