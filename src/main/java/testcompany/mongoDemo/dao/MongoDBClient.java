@@ -35,7 +35,11 @@ public class MongoDBClient {
 			synchronized(MongoDBClient.class){
 				if(instance==null){
 					instance = new MongoDBClient();
+					// no authentication
 					client = new MongoClient(DBConstant.URL, Integer.parseInt(DBConstant.PORT));
+					// if need authencate
+					// MongoCredential credential = MongoCredential.createCredential(username, database, password.toCharArray());
+					// client = new MongoClient(new ServerAddress(url, Integer.parseInt(port)), Arrays.asList(credential));
 					morphiaInstance = new Morphia();
 					morphiaInstance.map(Author.class, Blog.class);
 				}
